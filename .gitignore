@@ -13,6 +13,7 @@
 !*.ico
 !LICENSE
 # Or directories
+!*/
 # Build folder ska inte vara med
 **/build-*
 # and this
