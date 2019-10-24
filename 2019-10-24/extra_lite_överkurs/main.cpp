@@ -17,7 +17,7 @@ int main() {
 	string *s = new string; // En s.k pekare till en string deklareras. Pekaren innehåller adressen till innehållet i s
 	                        // Man brukar säga att s "pekar på" innehållet i s
     // Man kan också skriva i två steg
-    // string *s; // pekaren deklareras
+    // string *s; // pekaren deklareras.
     // s = new string; // Här skapas plats för en string i RAM-minnet. En variabel som kan användas.
 	*s = "dynamiskt allokerad";  // * betyder: "Det som finns på adressen som s pekar på" ges ett innehåll
 	cout << s << endl;  // Adressen skrivs ut

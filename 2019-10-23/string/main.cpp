@@ -12,7 +12,7 @@ int main() {
     // och lämnar '\n' kvar
     // vilket ställer till det för
     // "getline(cin,namn);" som slutar direkt
-    // Inmatning sker tills radbrytningstecknet (newline)
+    // Inmatning sker tills radbrytningstecknet (newline) hittas
     // Då funkar det att ha med blankslag
     cin >> namn;  // Tyvärr blir '\n' kvar...
     cout << namn << endl;
