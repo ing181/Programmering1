@@ -1,20 +1,21 @@
-# Build folder
+# Ignore Everything
+*
+# But not
+!*.cpp
+!*.h
+!*.pro
+!*.ts
+!*.grc
+!*.rc
+!*.ui
+!*.png
+!*.jpg
+!*.ico
+!LICENSE
+# Or directories
+!*/
+# Build folder ska inte vara med
 **/build-*
-
-# Temporary Project file
-*.pro.user
-
-# Compiled Language files
-*.qm
-
-# Windows executable
-*.exe
-
-# Windows Dynamic-link library
-*.dll
-
-# lib files
-**/lib*
-
-# compressed files
-*.zip
+# and this
+!.gitignore
+!README.md
