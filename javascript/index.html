@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<!-- Detta är en kommentar -->
+<meta charset="UTF-8"> <!-- Så att svenska åäö fungerar -->
+<title>Title of the document</title>
+<!-- style (CSS) används för att bestämma hur det ska se ut -->
+<style>
+  /* Detta är en kommentar när man kommenterar inne i style */
+  h1 {
+    color:red;  /* röd färg på texten */
+  }
+</style>
+<script>
+function berakna()
+{
+  var nr1 = document.getElementById("nr1").value;
+  var nr2 = document.getElementById("nr2").value;
+  nr1=Number(nr1);
+  nr2=Number(nr2);
+  var summa = nr1+nr2;
+
+  document.getElementById("visa_summan").innerHTML=summa;
+}
+
+</script>
+</head>
+
+<body>
+<h1>Välkomna!</h1>
+<!-- två textrutor och en knapp -->
+<input type="text" id="nr1"><br>
+<input type="text" id="nr2"><br>
+<input type="submit" value="Räkna ut" onclick="berakna();"><br>
+<div id="visa_summan"></div>
+</body>
+
+</html>
