@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Detta syns på fliken</title>
+</head>
+<!-- style används för att ge de olika sakerna på sidan
+den förg, storlek, m.m. som man vill -->
+<style>
+ h1 { 
+		color:red;
+	}
+
+</style>
+
+<!-- script används för programmering i javascript -->
+<script> // javascript
+  function klickat()
+  {
+		// Detta är en kommentar i javascript
+		// Det som finns i textrutan "nr1" hamnar i variabeln "textruta1"
+		var textruta1 = document.getElementById("nr1").value;
+  		// Det som finns i textrutan "nr2" hamnar i variabeln "textruta2"
+		var textruta2 = document.getElementById("nr2").value;
+	    // För att det ska gå att räkna måste det som finns i variablerna vara tal.
+		// Om vi inte omvandlar till siffror är det text.
+		textruta1=Number(textruta1);
+		textruta2=Number(textruta2);
+		// Nu ska vi addera
+		var summa = textruta1 + textruta2;
+		// och i den tredje textrutan syns summan
+		document.getElementById("summa").value = summa;
+  }
+
+
+</script>
+
+<body>
+
+<h1>Detta är en rubrik</h1>
+<p>Detta är ett stycke.</p>
+
+<!-- En kommentar -->
+<!-- Ett formulär med två textrutor och en knapp
+trycker man på knappen skickas innehållet i textrutorna 
+tillbaka till webbsidan. -->
+
+<input type="text" id="nr1">
+<input type="text" id="nr2">
+<input type="text" id="summa">
+<!-- När man klickar på knappen hoppar man till "function klickat()" -->
+<input type="submit" value="Skicka!" onclick="klickat()">
+
+</body>
+</html>
