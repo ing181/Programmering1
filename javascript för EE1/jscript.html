@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Javascript</title>
+	  <script>
+		function klickat()
+		{
+			var minVariabel = document.getElementById("textruta").value;
+			// alert(minVariabel);
+			document.getElementById("plats").innerHTML = minVariabel;
+		}
+	  
+	  </script>
+	</head>
+	<body>
+		<div id="plats">TEST</div>
+	
+	   <input type="text" id="textruta">
+	   <input type="button" value="Klicka här!" onclick="klickat()">
+	   
+	
+	
+	</body>
+</html>
